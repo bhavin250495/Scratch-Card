@@ -49,10 +49,13 @@ class ScratchCard: UIView {
         
         calculateUserScratchArea()
         
-        if let image = scratchImage {
-            overlayImage = scratchImage
-            overlayImage.draw(in: self.frame)
+          guard let image = scratchImage
+            else {
+                fatalError("PLEASE ADD ADD SCRATCH IMAGE")
         }
+        
+        overlayImage = image
+        overlayImage.draw(in: self.frame)
         
         context = UIGraphicsGetCurrentContext()
         
