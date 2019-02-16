@@ -4,6 +4,8 @@ Scratch card view built in native Swift / iOS
 
 ## Usage
 
+Drag UI view in storyboard and change classname to ScratchCard
+
 ### To get progress updates  
 
 ```
